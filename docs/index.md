@@ -1,3 +1,3 @@
 
 - https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en
-- - https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jMap/en
+- https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jMap/en
