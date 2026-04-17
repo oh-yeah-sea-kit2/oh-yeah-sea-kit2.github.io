@@ -1,6 +1,14 @@
 
-- [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en)
-- [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jin-journey/en](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jin-journey/en)
-- [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/chatgpt-notifier/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/chatgpt-notifier/jp)
-- [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/my_cheki_collection/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/my_cheki_collection/jp)
-- [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/jp)
+## プライバシーポリシー
+
+- おさんぽビンゴ (Walking Bingo)
+  - English: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en)
+- JinJourney
+  - English: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jin-journey/en](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/jin-journey/en)
+- ChatGPT Notifier
+  - 日本語: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/chatgpt-notifier/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/chatgpt-notifier/jp)
+- チェキこれ！
+  - 日本語: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/my_cheki_collection/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/my_cheki_collection/jp)
+- 視界体験 (Vision Sim)
+  - 日本語: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/jp](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/jp)
+  - English: [https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/en](https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/vision_sim/en)
