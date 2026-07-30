@@ -109,11 +109,14 @@
     <p>Most of the App's data is stored <strong>on your device</strong> rather than on our servers. Except where this Policy states that information is sent to us, the following is not transmitted to our servers.</p>
     <ul>
         <li>Ongoing and past bingo records, achievements, medals, and the collection book</li>
-        <li>Photos taken in the App and drawings you create</li>
+        <li>Photos you take in the App (both during a game and on the squares of a custom bingo card)</li>
+        <li>Drawings you create on the squares of a custom bingo card (unless you submit that card for publication)</li>
         <li>Display settings (such as the kanji / hiragana toggle) and other in-app settings</li>
         <li>The literal text of error messages and stack traces (written only to on-device logs; never transmitted)</li>
     </ul>
-    <p><strong>Photo and drawing image data itself is never sent to our servers.</strong> If you save a custom bingo card to the cloud, squares that use a photo or a drawing are represented in the cloud record by a hash value that identifies the image only — the image itself is not included.</p>
+    <p><strong>Photo image data is never sent to our servers.</strong> This holds even when you publish a card to the Public Gallery: the photo itself is never seen by anyone else (see section 4.5).</p>
+    <p>If you save a custom bingo card to the cloud, squares that use a photo or a drawing are represented in the cloud record by a hash value that identifies the image only — the image itself is not included.</p>
+    <p><strong>Only drawing images are sent to our servers, and only when you submit that card for publication.</strong> See section 4.5 for how they are handled.</p>
 
     <h2>4. Information We Collect and Why</h2>
 
@@ -179,12 +182,24 @@
 
     <h3>4.5 Public Gallery (User-Generated Content)</h3>
     <div class="notice">
+        <strong>The Public Gallery is not yet available.</strong> This section describes how it will work once we enable it. We will update the "last updated" date on this page when that happens.
+    </div>
+    <div class="notice">
         <strong>The content of a card you submit for publication becomes visible to the general public.</strong>
     </div>
     <ul>
-        <li>What is published is <strong>the card title and the text of each square</strong>.</li>
+        <li>What is published is <strong>the card title, the text of each square, and any drawing used on a square</strong>.</li>
         <li><strong>Nothing that identifies the author is published.</strong> Neither the gallery display nor our API responses include the author's name, email address, or user identifier (publication is anonymous).</li>
-        <li><strong>A card that contains a photo or drawing square cannot be published.</strong> Such a publication request is rejected, and the published data structure has no field that can reference an image, so photos and drawings cannot reach the publication path at all.</li>
+        <li><strong>Photos are never published.</strong> A card containing photo squares can be published, but what appears to other people is <strong>only the text entered on that square</strong>. Photo image data is never sent to our servers, so the published data structure has no field that can reference a photo and photos cannot reach the publication path at all.</li>
+        <li><strong>Drawings (pictures you create inside the App) are published.</strong> When you submit the card, those images are sent to our servers. They are handled as follows.
+            <ul>
+                <li><strong>Until an image passes review, no one else can obtain it</strong> — not even someone who knows its URL. The same applies to images that were rejected, suspended, or withdrawn. Whether an image is served is decided on every request by checking that it is referenced by a currently published card.</li>
+                <li>A reviewer always looks at the actual images before approving.</li>
+                <li>Any metadata carried by the image is removed automatically on our servers before it is stored.</li>
+                <li>If you delete the card, or delete your account, we delete the image data from our storage.</li>
+            </ul>
+        </li>
+        <li><strong>Please check what you draw.</strong> Before submitting, make sure you have not written identifying information — your name, address or school — into the picture. Our review cannot catch everything.</li>
         <li>Publication is subject to review. A card is published only after guardian approval plus our automated filter and human review.</li>
         <li><strong>If another user imports a published card to their own device, that copy remains with them even after you withdraw the card from publication.</strong> We cannot recall those copies.</li>
     </ul>
@@ -325,7 +340,7 @@
     <p>If you have any questions or suggestions about this Policy, please contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>.</p>
 
     <div class="footer">
-        <p>Last updated: July 28, 2026 (full revision)</p>
+        <p>Last updated: July 29, 2026 (added how drawings on custom cards are handled when published)</p>
         <p>Contact: <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a></p>
         <p>日本語: <a href="https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/jp">プライバシーポリシー（日本語）</a></p>
         <p>UGC Terms: <a href="https://oh-yeah-sea-kit2.github.io/Terms/walking_bingo/en">User-Generated Content (UGC) Terms of Use</a></p>
