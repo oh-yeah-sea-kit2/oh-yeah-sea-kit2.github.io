@@ -101,9 +101,10 @@
     <ul>
         <li>Sending usage data (4.1)</li>
         <li>Linking a Google or Apple account (4.3)</li>
-        <li>Saving your own bingo cards to the cloud, publishing to or importing from the public gallery, and reporting (4.2, 4.4)</li>
-        <li>Cloud sync of your walking streak record (4.4)</li>
+        <li>Saving your own bingo cards to the cloud (4.4)</li>
+        <li>Cloud sync of your walking streak record (4.7)</li>
     </ul>
+    <p><strong>The public gallery (4.2, 4.5) and the reporting of published cards (4.6) are still being prepared and are not available even in version 3.0.0.</strong> No information relating to them is collected or transmitted at present.</p>
 
     <h2>3. Information Stored Only on Your Device</h2>
     <p>Most of the App's data is stored <strong>on your device</strong> rather than on our servers. Except where this Policy states that information is sent to us, the following is not transmitted to our servers.</p>
@@ -116,7 +117,7 @@
     </ul>
     <p><strong>Photo image data is never sent to our servers.</strong> This holds even when you publish a card to the Public Gallery: the photo itself is never seen by anyone else (see section 4.5).</p>
     <p>If you save a custom bingo card to the cloud, squares that use a photo or a drawing are represented in the cloud record by a hash value that identifies the image only — the image itself is not included.</p>
-    <p><strong>Only drawing images are sent to our servers, and only when you submit that card for publication.</strong> See section 4.5 for how they are handled.</p>
+    <p><strong>Only drawing images are sent to our servers, and only when you submit that card for publication.</strong> However, <strong>submitting a card for publication is not yet available, so in the current version drawing images are not sent to our servers either.</strong> See section 4.5 for how they will be handled once publication is enabled.</p>
 
     <h2>4. Information We Collect and Why</h2>
 
@@ -150,9 +151,12 @@
     </ol>
     <p>Only the <strong>aggregated statistics produced in step 2</strong> are sent to the AI service. Individual interaction records, identifiers, and text you have entered are never sent. The generated report is used internally only and is never published.</p>
 
-    <p><strong>Opting out:</strong> sending usage data is on by default, but you can turn it off at any time in the App at "設定" (Settings) → "おとなのメニュー" (Adult Menu) → "利用状況データの送信" (Send usage data). Once off, no further data is sent and the anonymous measurement ID is erased from your device.</p>
+    <p><strong>Opting out:</strong> sending usage data is on by default, but you can turn it off at any time in the App at "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "利用状況データの送信" (Send usage data). Once off, no further data is sent and the anonymous measurement ID is erased from your device. The App can be switched to a hiragana display mode, in which the same items read "せってい" → "おうちのひとのせってい" → "つかいかたデータのそうしん".</p>
 
     <h3>4.2 Browsing and Importing from the Public Gallery (Happens Even Without Account Linking)</h3>
+    <div class="notice">
+        <strong>The Public Gallery is not yet available.</strong> Accordingly, the automatic creation of an anonymous account, the importing of published cards, and the import history described in this section do not occur in the current version. This section describes how they will work once we enable the gallery.
+    </div>
     <div class="notice">
         <strong>The following is sent to and stored on our servers even when you have not linked a Google or Apple account.</strong>
     </div>
@@ -207,6 +211,7 @@
     <p>The terms that govern the public gallery are set out separately in the <a href="https://oh-yeah-sea-kit2.github.io/Terms/walking_bingo/en">User-Generated Content (UGC) Terms of Use</a>.</p>
 
     <h3>4.6 Reports</h3>
+    <p><strong>Reporting is a feature of the public gallery, and it is unavailable while the gallery is being prepared.</strong> The following describes how it will work once we enable it.</p>
     <p>When you report a published card, we record <strong>the reporter's user identifier, the report category, the free-text description (up to 200 characters), the time of the report, and the card concerned</strong>. We use this to act on inappropriate content, to prevent recurrence, and to respond to disputes. Report contents are not disclosed to the author of the reported card.</p>
 
     <h3>4.7 Walk Streak Records</h3>
@@ -234,13 +239,13 @@
     </ul>
 
     <h3>4.11 In-App Purchases</h3>
-    <p>The App offers the ad-free "おうえんパス" (Support Pass, <code>support_pass</code>) and three "なげ銭" tip items (<code>tip_small</code> / <code>tip_medium</code> / <code>tip_large</code>). Payment and purchase records are handled through Apple's and Google's in-app purchase systems; <strong>we do not receive your credit card number or other payment details</strong>. Whether you hold the Support Pass is kept on your device, and we do not perform receipt validation on our servers. As noted in 4.1, whether you hold the Support Pass is included in usage data as a boolean value.</p>
+    <p>The App offers the ad-free "おうえんパス" (Support Pass, <code>support_pass</code>) and three "なげ銭" tip items (<code>tip_small</code> / <code>tip_medium</code> / <code>tip_large</code>). <strong>These purchases are offered on iOS only; the Android version has no purchase feature at all.</strong> Payment and purchase records are handled through Apple's in-app purchase system (the App Store); <strong>we do not receive your credit card number or other payment details</strong>. Whether you hold the Support Pass is kept on your device, and we do not perform receipt validation on our servers. As noted in 4.1, whether you hold the Support Pass is included in usage data as a boolean value (on Android it is always false, because there is no way to purchase).</p>
 
     <h3>4.12 Advertising</h3>
-    <p>Unless you have purchased the Support Pass, the App displays ads from Google AdMob. The advertising SDK may collect information such as your IP address and device attributes in order to deliver ads, prevent fraud, and measure performance. See "6. Third Parties and Processors" and Google's policies for details.</p>
+    <p>Unless you have purchased the Support Pass, the App displays ads from Google AdMob (on Android there is no way to purchase, so ads are always shown). <strong>We request non-personalized ads only: we do not request interest-based (personalized) advertising, and we do not request tracking across other apps or websites.</strong> The advertising SDK may nevertheless collect information such as your IP address and device attributes in order to deliver ads, prevent fraud, and count impressions. See "6. Third Parties and Processors" and Google's policies for details.</p>
 
     <h2>5. Guardian Confirmation Before Certain Actions</h2>
-    <p>Actions that involve a decision or consent — in-app purchases, account linking, account deletion, submitting a card for publication, reporting a card, and switching usage-data sending on or off — are placed behind a simple arithmetic confirmation screen ("おとなのかくにん", the guardian gate). Its purpose is to prevent these actions from being carried out by a child alone. It is not an age-verification mechanism, and we do not collect ages or dates of birth.</p>
+    <p>Actions that involve a decision or consent — in-app purchases, account linking, account deletion, submitting a card for publication, reporting a card, and switching usage-data sending on or off — are designed so that they are difficult for a child to carry out alone, for example by grouping them under "保護者向け設定" (Guardian Settings) in the App's settings screen and by showing a confirmation screen before the action is performed. These are not age-verification mechanisms, and we do not collect ages or dates of birth.</p>
 
     <h2>6. Third Parties and Processors</h2>
     <p>We do not sell or otherwise provide the information we collect to third parties, except as required by law. To operate the Service, however, we use the following providers.</p>
@@ -266,9 +271,9 @@
                 <td>The information you provide to each company when signing in. We receive the resulting identifier and email address</td>
             </tr>
             <tr>
-                <td>Apple Inc. / Google LLC</td>
-                <td>In-app purchase processing</td>
-                <td>The information each store requires for payment (we do not receive payment details)</td>
+                <td>Apple Inc.</td>
+                <td>In-app purchase processing (iOS only)</td>
+                <td>The information the App Store requires for payment (we do not receive payment details)</td>
             </tr>
             <tr>
                 <td>Google LLC (Google Fonts CDN, <code>fonts.gstatic.com</code>)</td>
@@ -315,9 +320,9 @@
     <h2>9. Your Rights</h2>
     <p>You may request access to, correction of, deletion of, or suspension of use of the information we hold about you.</p>
     <ul>
-        <li><strong>Deleting your account and data (in-app)</strong>: in the App, go to "設定" (Settings) → "おとなのメニュー" (Adult Menu) → "アカウント連携（保護者向け）" (Account linking, for guardians) → "アカウントを削除する" (Delete account). This takes effect immediately. <strong>If you have not linked an account, the anonymous account described in 4.2 is deleted through exactly the same steps.</strong> The guardian confirmation screen (a simple arithmetic problem) appears twice during the flow.</li>
+        <li><strong>Deleting your account and data (in-app)</strong>: in the App, go to "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "アカウント連携（保護者向け）" (Account linking, for guardians) → "アカウントを削除する" (Delete account). When the App is in hiragana display mode these read "せってい" → "おうちのひとのせってい" → "アカウントれんけい（ほごしゃむけ）" → "アカウントをさくじょする". <strong>If you have not linked an account, the anonymous account described in 4.2 is deleted through exactly the same steps.</strong> Because deletion cannot be undone, you are asked to answer a short arithmetic question intended for a guardian, and a confirmation dialog appears twice.</li>
         <li><strong>Deleting your account and data (outside the app)</strong>: if you have already uninstalled the App, follow the steps on the <a href="https://oh-yeah-sea-kit2.github.io/AccountDeletion/walking_bingo/en">Account Deletion Request</a> page to request deletion by email.</li>
-        <li><strong>Turning off usage data</strong>: go to "設定" (Settings) → "おとなのメニュー" (Adult Menu) → "利用状況データの送信" (Send usage data) and switch it off.</li>
+        <li><strong>Turning off usage data</strong>: go to "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "利用状況データの送信" (Send usage data) and switch it off. In hiragana display mode these read "せってい" → "おうちのひとのせってい" → "つかいかたデータのそうしん".</li>
         <li><strong>Withdrawing a published card</strong>: you can withdraw a card from publication in the card list in the App. Copies imported by other users before withdrawal remain with them.</li>
         <li><strong>Access, correction, and other requests</strong>: contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>. To prevent someone else's request from exposing or deleting your information, we will ask for information to verify your identity.</li>
     </ul>
@@ -340,7 +345,7 @@
     <p>If you have any questions or suggestions about this Policy, please contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>.</p>
 
     <div class="footer">
-        <p>Last updated: July 29, 2026 (added how drawings on custom cards are handled when published)</p>
+        <p>Last updated: August 8, 2026 (clarified that in-app purchases are iOS-only, that we request non-personalized ads only, and that the public gallery and reporting are still being prepared in this version; added the hiragana menu labels)</p>
         <p>Contact: <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a></p>
         <p>日本語: <a href="https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/jp">プライバシーポリシー（日本語）</a></p>
         <p>UGC Terms: <a href="https://oh-yeah-sea-kit2.github.io/Terms/walking_bingo/en">User-Generated Content (UGC) Terms of Use</a></p>
