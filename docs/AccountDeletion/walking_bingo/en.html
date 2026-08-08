@@ -67,10 +67,10 @@
     <div class="notice">
         <strong>There are two ways to request deletion:</strong>
         <ul>
-            <li><strong>Delete from within the app</strong> (recommended, takes effect immediately): 設定 (Settings) → おとなのメニュー (Adult Menu) → アカウント連携（保護者向け） (Account Linking, for guardians) → アカウントを削除する (Delete account)</li>
+            <li><strong>Delete from within the app</strong> (recommended, takes effect immediately): 設定 (Settings) → 保護者向け設定 (Guardian Settings) → アカウント連携（保護者向け） (Account Linking, for guardians) → アカウントを削除する (Delete account)</li>
             <li><strong>Request deletion by email</strong>: <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a> (for users who have already uninstalled the app, or who cannot use the in-app option)</li>
         </ul>
-        <p style="margin-bottom:0">The in-app flow shows a <strong>guardian confirmation screen twice</strong> — a simple addition problem with four answer choices. It exists so that deletion is not carried out by a child alone. Choosing the correct answer continues the flow.</p>
+        <p style="margin-bottom:0">Because deletion cannot be undone, the in-app flow shows a <strong>confirmation dialog twice</strong>. Please review the contents before proceeding.</p>
     </div>
 
     <h2>2. Deleting from Within the App (Recommended)</h2>
@@ -79,20 +79,18 @@
     <ol>
         <li>Launch Walking Bingo (おさんぽビンゴ).</li>
         <li>Open the <strong>設定</strong> (Settings) tab at the bottom of the screen.</li>
-        <li>Near the bottom of the list, tap <strong>おとなのメニュー</strong> (Adult Menu).</li>
-        <li><strong>Guardian confirmation (1st time)</strong>: a dialog titled <strong>おうちのひとにきいてね</strong> ("Ask a grown-up") shows an addition problem such as <code>3 ＋ 5 ＝ ？</code>. Tap the correct answer among the four choices to continue.</li>
+        <li>Near the bottom of the list, tap <strong>保護者向け設定</strong> (Guardian Settings).</li>
         <li>Open <strong>アカウント連携（保護者向け）</strong> (Account Linking, for guardians).</li>
         <li>Near the bottom of that screen, under the heading <strong>アカウントの削除</strong> (Account deletion), tap <strong>アカウントを削除する</strong> (Delete account).</li>
-        <li><strong>Guardian confirmation (2nd time)</strong>: the same kind of addition problem appears again. Tap the correct answer.</li>
         <li>First confirmation dialog — <strong>アカウントを削除しますか？</strong> ("Delete your account?"): tap <strong>削除にすすむ</strong> (Proceed to deletion).</li>
         <li>Second confirmation dialog — <strong>本当に削除しますか？</strong> ("Are you sure?"): tap <strong>削除する</strong> (Delete).</li>
         <li>The message <strong>削除しました</strong> ("Deleted") confirms that the deletion is complete.</li>
     </ol>
-    <p>Once you confirm, you are signed out immediately and the data listed in section 4 is deleted from the server. If you cancel at any point, or close the addition problem without answering it, nothing is deleted.</p>
-    <p><strong>About the hiragana display mode:</strong> when the app's "ひらがなモード" (hiragana mode) setting is on, the labels above appear in hiragana (for example, アカウント連携（保護者向け） becomes アカウントれんけい（ほごしゃむけ）, and アカウントを削除する becomes アカウントをさくじょする). The position and order of the items do not change.</p>
+    <p>Once you confirm, you are signed out immediately and the data listed in section 4 is deleted from the server. If you cancel at either confirmation dialog, nothing is deleted.</p>
+    <p><strong>About the hiragana display mode:</strong> when the app's "ひらがなモード" (hiragana mode) setting is on, the labels above appear in hiragana (for example, 保護者向け設定 becomes おうちのひとのせってい, アカウント連携（保護者向け） becomes アカウントれんけい（ほごしゃむけ）, and アカウントを削除する becomes アカウントをさくじょする). The position and order of the items do not change.</p>
 
     <h3>2.1 If You Have Not Linked an Account</h3>
-    <p>The app creates an anonymous account on our servers automatically <strong>the moment you open the public gallery</strong>, even if you have not linked a Google or Apple account. That anonymous account contains no name and no email address. It can be deleted with exactly the same steps as in section 2 above.</p>
+    <p>The app creates an account on our servers when you tap <strong>クラウド機能をONにする</strong> (Turn on cloud features) on the アカウント連携（保護者向け） (Account Linking) screen, or when you link a Google or Apple account. The account created in the first case is anonymous: it contains no name and no email address. It can be deleted with exactly the same steps as in section 2 above. No other action creates an account on our servers — in this version the public gallery is still in preparation, so browsing the gallery does not create one.</p>
     <p>If no account has been created on our servers yet, tapping アカウントを削除する (Delete account) shows <strong>削除するデータはありません</strong> ("There is no data to delete"). In that case there is nothing on the server to delete.</p>
 
     <h2>3. Requesting Deletion by Email</h2>
@@ -115,15 +113,17 @@
     <p>When your account is deleted, the following data is deleted from our servers.</p>
     <ul>
         <li><strong>Custom bingo cards saved to the cloud</strong> (including card titles and the contents of each square, and including cards imported from the public gallery)</li>
-        <li><strong>Account link information</strong> (the identifier received from your sign-in provider, such as Apple or Google)</li>
+        <li><strong>Account link information</strong> (the identifier received from your sign-in provider, such as Apple or Google). If you used Sign in with Apple, we also ask Apple to revoke the tokens issued for this app as part of the deletion, so the app is removed from Settings &gt; your name &gt; Sign-In &amp; Security &gt; Apps Using Apple Account on iOS. You do not need to do anything yourself.</li>
         <li><strong>Login session information</strong> (tokens used to keep you signed in)</li>
         <li><strong>Streak records</strong> (the record of the days you went for a walk)</li>
         <li><strong>Card import history</strong> (the record of cards published by other users that you imported)</li>
+        <li><strong>Drawings stored on our servers</strong> (the uploaded image files used for card squares, together with their stored records. <strong>Photos are never sent to our servers, so they are not included here.</strong>)</li>
     </ul>
 
     <h2>5. Data That Becomes Unpublished</h2>
+    <p><strong>In this version (v3.0.0) the public gallery is still in preparation and cards cannot be published, so no card can be published or awaiting review.</strong> Once the publishing feature becomes available, it will be handled as follows.</p>
     <ul>
-        <li><strong>Cards that are published or awaiting review</strong> are set to a suspended state and no longer appear in the public gallery.</li>
+        <li><strong>Cards that are published or awaiting review</strong> are set to a suspended state and no longer appear in the public gallery. <strong>The published record itself (the card title and the published contents of each square) is not deleted; it is retained as a record of the suspension</strong> (see "6. Data Retained After Deletion").</li>
         <li>However, <strong>copies of a card that other users imported to their own devices before it was suspended</strong> remain on those users' devices. We are not able to withdraw those copies.</li>
     </ul>
 
@@ -133,8 +133,10 @@
         <li><strong>A minimal record that the account has been deleted</strong> (an internal identifier and the deletion status): retained so that duplicate deletion requests are not processed twice and so that completion of the deletion can be confirmed. Information that identifies you personally (such as sign-in information) is deleted as described in section 4.</li>
         <li><strong>Records of consent to the User-Generated Content (UGC) Terms of Use</strong>: retained as a record of the fact that consent was given.</li>
         <li><strong>Reports submitted by other users</strong>: retained in order to handle inappropriate content, prevent recurrence, and respond to disputes.</li>
+        <li><strong>Records of publications that were suspended, and the history of their state changes</strong> (the public card ID, the published title and square contents, the time of suspension, and the state-change history): retained so that we can confirm the withdrawal was carried out correctly, prevent recurrence, and respond to disputes. The card itself, as stored on your device and in the cloud, is deleted as described in section 4.</li>
         <li><strong>Email correspondence</strong>: your messages remain on the mail server as a record of the inquiry.</li>
     </ul>
+    <p>Separately, <strong>usage data (anonymous interaction logs sent to help us improve the app)</strong> is never linked to your account in the first place, and is therefore outside the scope of account deletion. To stop it, go to 設定 (Settings) → 保護者向け設定 (Guardian Settings) and turn off 利用状況データの送信 (Send usage data). Once it is off, a new identifier is used from that point on, unconnected to any earlier records.</p>
 
     <h2>7. Data This Deletion Does Not Cover (On-Device Data)</h2>
     <p>Most of Walking Bingo's game data is stored <strong>on your device</strong>, not on our servers. The deletion described on this page covers <strong>account data on the server</strong>; data stored on your device is not deleted.</p>
@@ -161,7 +163,7 @@
     <p>If you have any questions about this page or about account deletion, please contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>.</p>
 
     <div class="footer">
-        <p>Last updated: July 28, 2026</p>
+        <p>Last updated: August 8, 2026 (clarified what creates a server-side account, that stored drawings are deleted, what is retained about suspended publications, and how usage data is handled)</p>
         <p>Contact: <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a></p>
         <p>日本語: <a href="https://oh-yeah-sea-kit2.github.io/AccountDeletion/walking_bingo/jp">アカウント削除のご案内（日本語）</a></p>
         <p>Privacy Policy: <a href="https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/en">Privacy Policy</a></p>
