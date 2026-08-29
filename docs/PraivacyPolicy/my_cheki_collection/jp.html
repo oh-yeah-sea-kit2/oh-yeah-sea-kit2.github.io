@@ -25,7 +25,7 @@
         }
         h3 {
             font-size: 1.2em;
-            color: #7f8c8d;
+            color: #566573;
         }
         ul {
             padding-left: 20px;
@@ -34,7 +34,7 @@
             margin-bottom: 0.5em;
         }
         a {
-            color: #3498db;
+            color: #1f618d;
             text-decoration: none;
         }
         a:hover {
@@ -45,7 +45,7 @@
             padding-top: 1em;
             border-top: 1px solid #eee;
             font-size: 0.9em;
-            color: #7f8c8d;
+            color: #566573;
         }
     </style>
 </head>
@@ -104,13 +104,42 @@
     <h2>4. 第三者サービス</h2>
     <p>本アプリでは、以下の第三者サービスを使用しています：</p>
     <ul>
-        <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543?hl=en">AdMob</a></li>
-        <li><a href="https://supabase.com/privacy">Supabase</a></li>
-        <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare R2</a></li>
+        <li>Google Play Services</li>
+        <li>AdMob（広告配信）</li>
+        <li>Supabase（認証・データベース）</li>
+        <li>Cloudflare R2 / Workers（画像の保存・API）</li>
+        <li>RevenueCat（サブスクリプションの管理）</li>
+        <li>Replicate, Inc.（米国／写真の高画質化処理）</li>
     </ul>
 
-    <h2>5. データの保持期間</h2>
+    <h2>5. 写真の外部送信について</h2>
+    <p>
+        本アプリの「きれいにする」機能（バージョン1.3.0以降）のうち、
+        <strong>「最高画質」を選んだときに限り</strong>、対象の写真を高画質化処理のために
+        外部の事業者へ送信します。
+    </p>
+    <ul>
+        <li><strong>委託先</strong>：Replicate, Inc.</li>
+        <li><strong>所在国</strong>：アメリカ合衆国</li>
+        <li><strong>委託する業務</strong>：送信された画像の高画質化処理</li>
+        <li><strong>送信するもの</strong>：その写真の画像データのみ。アカウント情報・
+            メールアドレス・チェキのタイトル・人物名・タグなどは送信しません</li>
+    </ul>
+    <p>
+        送信は、ユーザーが画面上で「最高画質」を選んだときだけ行われます。自動では送信しません。
+        <strong>「最高画質」を選ぶ操作をもって、上記の外国にある第三者への提供に同意いただいたものとして扱います。</strong>
+        この処理を望まない場合は「最高画質」を選ばないでください。「標準」の高画質化は
+        <strong>端末の中だけ</strong>で処理し、外部へ送信しません。その他の機能も通常どおりご利用いただけます。
+    </p>
+    <p>
+        アメリカ合衆国には、日本の個人情報保護法に相当する包括的な個人情報保護制度は
+        存在せず、分野別・州別の法令によって規律されています。委託先における個人情報の
+        取り扱いは同社のプライバシーポリシー
+        （<a href="https://replicate.com/privacy">https://replicate.com/privacy</a>）に従います。
+        サービス提供者は、委託先に対して必要かつ適切な監督を行います。
+    </p>
+
+    <h2>6. データの保持期間</h2>
     <ul>
         <li>アカウント情報：退会またはアカウント削除まで</li>
         <li>チェキデータ：削除要求があるまで</li>
@@ -118,7 +147,7 @@
         <li>未使用アカウント：最終利用から90日後に自動削除</li>
     </ul>
 
-    <h2>6. ユーザーの権利</h2>
+    <h2>7. ユーザーの権利</h2>
     <p>ユーザーには以下の権利があります：</p>
     <ul>
         <li>個人情報へのアクセス</li>
@@ -129,7 +158,7 @@
     <p>これらの権利を行使する場合は、<a href="mailto:info+chekikore_app@oysk2.com">info+chekikore_app@oysk2.com</a>までご連絡ください。</p>
 
     <div class="footer">
-        <p>最終更新日：2024年1月23日</p>
+        <p>最終更新日：2026年8月30日</p>
         <p>お問い合わせ：<a href="mailto:info+chekikore_app@oysk2.com">info+chekikore_app@oysk2.com</a></p>
         <p>X（Twitter）：<a href="https://twitter.com/chekikore_app">@chekikore_app</a></p>
     </div>
