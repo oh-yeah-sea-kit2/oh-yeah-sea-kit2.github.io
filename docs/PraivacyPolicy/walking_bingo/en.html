@@ -151,7 +151,7 @@
     </ol>
     <p>Only the <strong>aggregated statistics produced in step 2</strong> are sent to the AI service. Individual interaction records, identifiers, and text you have entered are never sent. The generated report is used internally only and is never published.</p>
 
-    <p><strong>Opting out:</strong> sending usage data is on by default, but you can turn it off at any time in the App at "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "利用状況データの送信" (Send usage data). Once off, no further data is sent and the anonymous measurement ID is erased from your device. The App can be switched to a hiragana display mode, in which the same items read "せってい" → "おうちのひとのせってい" → "つかいかたデータのそうしん".</p>
+    <p><strong>Opting out:</strong> sending usage data is on by default, but you can turn it off at any time in the App at "設定" (Settings) → "アカウント・データ管理" (Account &amp; data) → "利用状況データの送信" (Send usage data). Once off, no further data is sent and the anonymous measurement ID is erased from your device. The App can be switched to a hiragana display mode, in which the same items read "せってい" → "アカウント・データかんり" → "つかいかたデータのそうしん".</p>
 
     <h3>4.2 Browsing and Importing from the Public Gallery (Happens Even Without Account Linking)</h3>
     <div class="notice">
@@ -181,7 +181,8 @@
     <p>We use this to synchronize data between your device and the cloud, to establish who is responsible for a publication request, and to respond to abuse. Linking is optional; you can play bingo, use the collection book, and create custom cards stored on your device without linking an account.</p>
 
     <h3>4.4 Cloud Storage of Custom Bingo Cards</h3>
-    <p>If you have linked an account, the custom bingo cards you create yourself are stored on our servers. What is stored is <strong>the card title, the content of each of the 25 squares (including the literal text you typed)</strong>, and the state of the card (draft / approved by a guardian / awaiting review, and so on). The purpose is to let you restore your cards after changing or reinstalling on a device, and to synchronize across devices.</p>
+    <p>If you have linked an account, the custom bingo cards you create yourself are stored on our servers. What is stored is <strong>the card title, the content of each of the 25 squares (including the literal text you typed)</strong>, and the state of the card (draft / confirmed / awaiting review, and so on). The purpose is to let you restore your cards after changing or reinstalling on a device, and to synchronize across devices.</p>
+    <p>To prevent abuse, we also record, per account, <strong>the number of cards newly saved to the cloud in each month (a count only)</strong>. When you newly save a 6th or later card in the same month you may be asked to watch a video ad (if you choose not to, the card stays on your device), and at most 30 cards can be newly saved per month. There is no limit on the number of cards you create on the device.</p>
     <p>Note that <strong>cards imported from the public gallery are stored on our servers even if you have not linked an account</strong> (see 4.2).</p>
 
     <h3>4.5 Public Gallery (User-Generated Content)</h3>
@@ -204,7 +205,7 @@
             </ul>
         </li>
         <li><strong>Please check what you draw.</strong> Before submitting, make sure you have not written identifying information — your name, address or school — into the picture. Our review cannot catch everything.</li>
-        <li>Publication is subject to review. A card is published only after guardian approval plus our automated filter and human review.</li>
+        <li>Publication is subject to review. A card is published only after your own confirmation plus our automated filter and human review.</li>
         <li><strong>If another user imports a published card to their own device, that copy remains with them even after you withdraw the card from publication.</strong> We cannot recall those copies.</li>
     </ul>
     <p>This section covers the <strong>publishing</strong> side. For what is stored on our servers when you <strong>browse or import from</strong> the public gallery, see 4.2.</p>
@@ -241,7 +242,7 @@
     <h3>4.11 In-App Purchases</h3>
     <p>The App offers the following in-app purchases. <strong>All of them are offered on iOS only; the Android version has no purchase feature at all.</strong></p>
     <ul>
-        <li><strong>"おさんぽプレミアム" (Osanpo Premium, <code>premium_monthly</code>)</strong>: an auto-renewable subscription at JPY 300 per month (tax included). While active, no ads are shown and you can create an unlimited number of "じぶんビンゴ" custom cards (without it, up to 5). It renews automatically unless cancelled at least 24 hours before the end of the period, and is charged to your Apple ID. You can cancel in iOS Settings &gt; Apple ID &gt; Subscriptions. Cards you created remain usable after cancellation.</li>
+        <li><strong>"おさんぽプレミアム" (Osanpo Premium, <code>premium_monthly</code>)</strong>: an auto-renewable monthly subscription that is in preparation and <strong>is not currently offered</strong> (the App has no entry point to purchase it). When we start offering it, we will describe its content, price and how to cancel on this page and update the "Last updated" date.</li>
         <li><strong>"なげ銭" tips (<code>tip_small</code> / <code>tip_medium</code> / <code>tip_large</code>)</strong>: one-time purchases of JPY 100 / 300 / 600. They unlock no feature; you only receive a thank-you medal.</li>
     </ul>
     <p>Payment is handled through Apple's in-app purchase system (the App Store); <strong>we do not receive your credit card number or other payment details</strong>.</p>
@@ -255,10 +256,10 @@
     <p>As noted in 4.1, whether Osanpo Premium is active is included in usage data as a boolean value (on Android it is always false, because there is no way to purchase).</p>
 
     <h3>4.12 Advertising</h3>
-    <p>Unless Osanpo Premium is active, the App displays ads from Google AdMob (on Android there is no way to purchase, so ads are always shown). While it is active, no ad request is sent at all. <strong>We request non-personalized ads only: we do not request interest-based (personalized) advertising, and we do not request tracking across other apps or websites.</strong> The advertising SDK may nevertheless collect information such as your IP address and device attributes in order to deliver ads, prevent fraud, and count impressions. See "6. Third Parties and Processors" and Google's policies for details.</p>
+    <p>The App displays ads from Google AdMob: banner ads, and video ads that you choose to watch. A video ad is offered as a reward after finishing a round, and when you newly save a 6th or later card to the cloud in the same month (see 4.3). Watching is always optional. <strong>We request non-personalized ads only: we do not request interest-based (personalized) advertising, and we do not request tracking across other apps or websites.</strong> The advertising SDK may nevertheless collect information such as your IP address and device attributes in order to deliver ads, prevent fraud, and count impressions. See "6. Third Parties and Processors" and Google's policies for details.</p>
 
-    <h2>5. Guardian Confirmation Before Certain Actions</h2>
-    <p>Actions that involve a decision or consent — in-app purchases, account linking, account deletion, submitting a card for publication, reporting a card, and switching usage-data sending on or off — are designed so that they are difficult for a child to carry out alone, for example by grouping them under "保護者向け設定" (Guardian Settings) in the App's settings screen and by showing a confirmation screen before the action is performed. These are not age-verification mechanisms, and we do not collect ages or dates of birth.</p>
+    <h2>5. Confirmation Before Certain Actions</h2>
+    <p>Before an action that cannot be undone or that involves consent — in-app purchases, account deletion, submitting a card for publication, reporting a card — the App shows a confirmation screen. In-app purchases, account linking and data management are grouped under "アカウント・データ管理" (Account &amp; data) in the App's settings screen. The App has no mechanism to verify age or guardianship, and we do not collect ages or dates of birth.</p>
 
     <h2>6. Third Parties and Processors</h2>
     <p>We do not sell or otherwise provide the information we collect to third parties, except as required by law. To operate the Service, however, we use the following providers.</p>
@@ -338,9 +339,9 @@
     <h2>9. Your Rights</h2>
     <p>You may request access to, correction of, deletion of, or suspension of use of the information we hold about you.</p>
     <ul>
-        <li><strong>Deleting your account and data (in-app)</strong>: in the App, go to "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "アカウント連携（保護者向け）" (Account linking, for guardians) → "アカウントを削除する" (Delete account). When the App is in hiragana display mode these read "せってい" → "おうちのひとのせってい" → "アカウントれんけい（ほごしゃむけ）" → "アカウントをさくじょする". <strong>If you have not linked an account, the anonymous account described in 4.2 is deleted through exactly the same steps.</strong> Because deletion cannot be undone, you are asked to answer a short arithmetic question intended for a guardian, and a confirmation dialog appears twice.</li>
+        <li><strong>Deleting your account and data (in-app)</strong>: in the App, go to "設定" (Settings) → "アカウント・データ管理" (Account &amp; data) → "アカウント連携" (Account linking) → "アカウントを削除する" (Delete account). When the App is in hiragana display mode these read "せってい" → "アカウント・データかんり" → "アカウントれんけい" → "アカウントをさくじょする". <strong>If you have not linked an account, the anonymous account described in 4.2 is deleted through exactly the same steps.</strong> Because deletion cannot be undone, a confirmation dialog appears twice.</li>
         <li><strong>Deleting your account and data (outside the app)</strong>: if you have already uninstalled the App, follow the steps on the <a href="https://oh-yeah-sea-kit2.github.io/AccountDeletion/walking_bingo/en">Account Deletion Request</a> page to request deletion by email.</li>
-        <li><strong>Turning off usage data</strong>: go to "設定" (Settings) → "保護者向け設定" (Guardian Settings) → "利用状況データの送信" (Send usage data) and switch it off. In hiragana display mode these read "せってい" → "おうちのひとのせってい" → "つかいかたデータのそうしん".</li>
+        <li><strong>Turning off usage data</strong>: go to "設定" (Settings) → "アカウント・データ管理" (Account &amp; data) → "利用状況データの送信" (Send usage data) and switch it off. In hiragana display mode these read "せってい" → "アカウント・データかんり" → "つかいかたデータのそうしん".</li>
         <li><strong>Withdrawing a published card</strong>: you can withdraw a card from publication in the card list in the App. Copies imported by other users before withdrawal remain with them.</li>
         <li><strong>Access, correction, and other requests</strong>: contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>. To prevent someone else's request from exposing or deleting your information, we will ask for information to verify your identity.</li>
     </ul>
@@ -348,7 +349,7 @@
 
     <h2>10. Children</h2>
     <p>The Service <strong>does not address anyone under the age of 13</strong>. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we delete it from our servers promptly. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a> so that we can take the necessary action.</p>
-    <p>The App is designed to be used by children together with their family. Actions that involve a decision or consent are placed behind a guardian confirmation screen (section 5), but that screen is not an age-verification mechanism.</p>
+    <p>The App is designed to be used by an adult on their own, or by a parent together with their child. It assumes that an adult operates the device, and it has no age-verification mechanism.</p>
 
     <h2>11. Security</h2>
     <p>We take reasonable safeguards to protect the information entrusted to us, including encrypted transport (HTTPS), restricted access, and rate limiting. However, no method of transmission over the internet or of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
@@ -363,7 +364,7 @@
     <p>If you have any questions or suggestions about this Policy, please contact <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a>.</p>
 
     <div class="footer">
-        <p>Last updated: September 6, 2026 (in-app purchases changed to the monthly subscription "Osanpo Premium" and tips; added that RevenueCat is used to verify purchases and what it receives; corrected the device attributes listed for usage data to match what is actually sent)</p>
+        <p>Last updated: October 7, 2026 (reflects that the monthly subscription "Osanpo Premium" is not currently offered; the settings screen was renamed to "アカウント・データ管理" and the guardian arithmetic check was removed; added the monthly count of cards saved to the cloud and the optional video ad)</p>
         <p>August 8, 2026: clarified that in-app purchases are iOS-only, that we request non-personalized ads only, and that the public gallery and reporting are still being prepared in this version; added the hiragana menu labels</p>
         <p>Contact: <a href="mailto:info+walking_bingo@oysk2.com">info+walking_bingo@oysk2.com</a></p>
         <p>日本語: <a href="https://oh-yeah-sea-kit2.github.io/PraivacyPolicy/walking_bingo/jp">プライバシーポリシー（日本語）</a></p>
